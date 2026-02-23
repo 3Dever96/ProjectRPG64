@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 7968678010766006193}
   - component: {fileID: 3719587288346450273}
   - component: {fileID: 2687009670411757320}
-  - component: {fileID: 6247033828513553997}
-  - component: {fileID: 5490009008704280178}
-  - component: {fileID: 8073326706365488103}
+  - component: {fileID: 729176437668309355}
+  - component: {fileID: 3987247122284562117}
+  - component: {fileID: 2119052371703121552}
+  - component: {fileID: 4107250216691881467}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -49,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 650212167
+  GlobalObjectIdHash: 166647823
   InScenePlacedSourceGlobalObjectIdHash: 0
   DeferredDespawnTick: 0
   Ownership: 1
@@ -108,7 +109,7 @@ MonoBehaviour:
   SwitchTransformSpaceWhenParented: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!114 &6247033828513553997
+--- !u!114 &729176437668309355
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,7 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
   m_Actions: {fileID: -944628639613478452, guid: 1e08021f6d374c644b3a28740e566ebc, type: 3}
-  m_NotificationBehavior: 1
+  m_NotificationBehavior: 3
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -138,7 +139,20 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!143 &5490009008704280178
+--- !u!114 &3987247122284562117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34997005631781028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19d55a0033ba5ed43903378e4c6aa1ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ProjectRPG64.System::ProjectRPG64.System.InputManager
+  ShowTopMostFoldoutHeaderGroup: 1
+--- !u!143 &2119052371703121552
 CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,7 +177,7 @@ CharacterController:
   m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &8073326706365488103
+--- !u!114 &4107250216691881467
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,6 +190,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: ProjectRPG64.PlayerMovement::ProjectRPG64.PlayerMovement.PlayerController
   ShowTopMostFoldoutHeaderGroup: 1
+  stickForce: 0
+  gravity: -14.715
+  turnSpeed: 500
+  groundState:
+    maxSpeed: 5
+    accel: 25
+    decel: 50
+    fric: 15
+    maxTurnAngle: 90
 --- !u!1 &1548644399291126266
 GameObject:
   m_ObjectHideFlags: 0

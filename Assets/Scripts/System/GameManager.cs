@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using Unity.Netcode;
 
@@ -20,6 +21,13 @@ namespace ProjectRPG64.System
                     Destroy(gameObject);
                 }
             }
+
+            StartCoroutine(StartNetwork());
+        }
+
+        IEnumerator StartNetwork()
+        {
+            yield return new WaitForSeconds(1);
 
             NetworkManager.Singleton.StartHost();
         }
