@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 using Unity.Netcode;
 
@@ -8,7 +7,7 @@ namespace ProjectRPG64.System
     {
         public static GameManager instance;
 
-        void Awake()
+        void Start()
         {
             if (instance == null)
             {
@@ -22,14 +21,21 @@ namespace ProjectRPG64.System
                 }
             }
 
-            StartCoroutine(StartNetwork());
-        }
-
-        IEnumerator StartNetwork()
-        {
-            yield return new WaitForSeconds(1);
-
-            NetworkManager.Singleton.StartHost();
+            if (Application.isEditor)
+            {
+                if (Application.dataPath.Contains("Clone"))
+                {
+                    NetworkManager.Singleton.StartClient();
+                }
+                else
+                {
+                    NetworkManager.Singleton.StartHost();
+                }
+            }
+            else
+            {
+                NetworkManager.Singleton.StartHost();
+            }
         }
     }
 }
