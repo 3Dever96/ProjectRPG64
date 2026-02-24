@@ -19,19 +19,23 @@ namespace ProjectRPG64.PlayerMovement
 
         public float StickForce { get { return stickForce; } }
         public float Gravity { get { return gravity; } }
+        public float JumpSpeed { get { return jumpSpeed; } }
         public float TurnSpeed { get { return turnSpeed; } }
 
         // State Machine
         public PlayerState CurrentState { get; private set; }
         public PlayerGroundState GroundState { get { return groundState; } }
+        public PlayerAirState AirState { get { return airState; } }
 
         [Header("Univeral Variables")]
         [SerializeField] float stickForce;
         [SerializeField] float gravity;
+        [SerializeField] float jumpSpeed;
         [SerializeField] float turnSpeed;
 
         // States
         [SerializeField] PlayerGroundState groundState = new PlayerGroundState();
+        [SerializeField] PlayerAirState airState = new PlayerAirState();
 
         void Start()
         {
@@ -39,8 +43,16 @@ namespace ProjectRPG64.PlayerMovement
             Controller = GetComponent<CharacterController>();
             Input = GetComponent<InputManager>();
 
+            // Set Default Direction
             Direction = transform.forward;
 
+            // Set Camera Target
+            if (IsOwner)
+            {
+                FindFirstObjectByType<CameraTarget>().SetTarget(transform);
+            }
+
+            // Initialize State Machine
             SetState(groundState);
         }
 

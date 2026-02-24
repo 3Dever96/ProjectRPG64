@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 166647823
+  GlobalObjectIdHash: 2250600951
   InScenePlacedSourceGlobalObjectIdHash: 0
   DeferredDespawnTick: 0
   Ownership: 1
@@ -190,8 +190,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: ProjectRPG64.PlayerMovement::ProjectRPG64.PlayerMovement.PlayerController
   ShowTopMostFoldoutHeaderGroup: 1
-  stickForce: 0
+  stickForce: -5
   gravity: -14.715
+  jumpSpeed: 7
   turnSpeed: 500
   groundState:
     maxSpeed: 5
@@ -199,6 +200,8 @@ MonoBehaviour:
     decel: 50
     fric: 15
     maxTurnAngle: 90
+  airState:
+    fallSpeed: -25
 --- !u!1 &1548644399291126266
 GameObject:
   m_ObjectHideFlags: 0

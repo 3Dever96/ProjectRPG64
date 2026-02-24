@@ -14,9 +14,13 @@ namespace ProjectRPG64.PlayerMovement
 
         float moveSpeed;
 
+        bool canJump;
+
         public override void StartState(PlayerController player)
         {
             player.VerticalSpeed = player.StickForce;
+
+            canJump = false;
         }
 
         public override void UpdateState(PlayerController player)
@@ -60,14 +64,28 @@ namespace ProjectRPG64.PlayerMovement
 
             player.FaceDirection(player.Direction, player.TurnSpeed);
 
+            if (player.Input.Jump && canJump)
+            {
+                player.VerticalSpeed = player.JumpSpeed;
+            }
+
+            if (!player.Input.Jump && !canJump)
+            {
+                canJump = true;
+            }
+
             Vector3 velocity = player.Direction * player.CurrentSpeed;
+            velocity.y = player.VerticalSpeed;
 
             player.Velocity = velocity;
         }
 
         public override void ChangeState(PlayerController player)
         {
-            
+            if (player.VerticalSpeed > 0f || !Physics.CheckSphere(player.transform.position, player.Controller.radius - 0.01f, LayerMask.GetMask("Solid")))
+            {
+                player.SetState(player.AirState);
+            }
         }
 
         public override void ExitState(PlayerController player)

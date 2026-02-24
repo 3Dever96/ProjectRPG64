@@ -8,10 +8,12 @@ namespace ProjectRPG64.System
     public class InputManager : NetworkBehaviour
     {
         public Vector2 Move { get { return move; } }
+        public bool Jump { get { return jump; } }
 
         PlayerInput input;
 
-        [SerializeField] Vector2 move;
+        Vector2 move;
+        bool jump;
 
         public override void OnNetworkSpawn()
         {
@@ -37,7 +39,23 @@ namespace ProjectRPG64.System
                     case "Move":
                         move = context.ReadValue<Vector2>();
                         break;
+                    case "Jump":
+                        SetInputValue(context, ref jump);
+                        break;
                 }
+            }
+        }
+
+        void SetInputValue(InputAction.CallbackContext context, ref bool value)
+        {
+            if (context.performed)
+            {
+                value = true;
+            }
+
+            if (context.canceled)
+            {
+                value = false;
             }
         }
     }
