@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: ProjectRPG64.Database::ProjectRPG64.Database.CharacterClass
   className: Barbarian
   classIcon: {fileID: 0}
-  ringIndex: 10
+  ringPosition: 10
   armorTypes: 0500000007000000
   weaponTypes: 000000000200000006000000

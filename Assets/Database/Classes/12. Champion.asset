@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: ProjectRPG64.Database::ProjectRPG64.Database.CharacterClass
   className: Champion
   classIcon: {fileID: 0}
-  ringIndex: 11
+  ringPosition: 11
   armorTypes: 00000000050000000600000007000000
   weaponTypes: 000000000200000006000000

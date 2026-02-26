@@ -9,7 +9,7 @@ namespace ProjectRPG64.Database
         [Header("General Information")]
         public string className;
         public Sprite classIcon;
-        [Range(0, 11)] public int ringIndex;
+        [Range(0, 11)] public int ringPosition;
 
         [Header("Equipment")]
         public List<ArmorType> armorTypes;

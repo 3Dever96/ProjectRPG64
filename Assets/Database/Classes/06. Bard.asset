@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: ProjectRPG64.Database::ProjectRPG64.Database.CharacterClass
   className: Bard
   classIcon: {fileID: 0}
-  ringIndex: 5
+  ringPosition: 5
   armorTypes: 020000000300000007000000
   weaponTypes: 00000000030000000400000005000000

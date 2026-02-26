@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: ProjectRPG64.Database::ProjectRPG64.Database.CharacterClass
   className: Cleric
   classIcon: {fileID: 0}
-  ringIndex: 2
+  ringPosition: 2
   armorTypes: 010000000600000007000000
   weaponTypes: 0200000003000000

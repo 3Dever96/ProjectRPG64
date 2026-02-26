@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: ProjectRPG64.Database::ProjectRPG64.Database.CharacterClass
   className: Sorcerer
   classIcon: {fileID: 0}
-  ringIndex: 4
+  ringPosition: 4
   armorTypes: 0200000007000000
   weaponTypes: 0300000004000000

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d192cf6636ab354dbc87a3a30ed4c53, type: 3}
+  m_Name: Database
+  m_EditorClassIdentifier: ProjectRPG64.Database::ProjectRPG64.Database.Database
+  classes:
+  - {fileID: 11400000, guid: 39ababf40520b9345a1dd190070b1843, type: 2}
+  - {fileID: 11400000, guid: a689f4851ad4cd2428495e73d13e89f5, type: 2}
+  - {fileID: 11400000, guid: d4c5a4f007f7f6843a92bda4f034b0d5, type: 2}
+  - {fileID: 11400000, guid: db563e88175f9004e8c73eadd244752a, type: 2}
+  - {fileID: 11400000, guid: 0fa2014ebdca8944fa713d7f562303dd, type: 2}
+  - {fileID: 11400000, guid: 2ba65eecacc482349aa59a0ee3439533, type: 2}
+  - {fileID: 11400000, guid: 11cd450a980e9034685eb1dadcabed9e, type: 2}
+  - {fileID: 11400000, guid: d83a3546ce482724aa07601d55f1c048, type: 2}
+  - {fileID: 11400000, guid: a0379149657fa224fa7d87c791397f01, type: 2}
+  - {fileID: 11400000, guid: dccdab422140e4148a8fbcef48eea972, type: 2}
+  - {fileID: 11400000, guid: e56dec1e535073144acebe9040e673ac, type: 2}
+  - {fileID: 11400000, guid: 804a03862976f2741b29e02fc4aa8cad, type: 2}
+  expCurve: {fileID: 11400000, guid: cb8455fde0d393c48a811156a1be51d9, type: 2}
+  hp: {fileID: 11400000, guid: f7fafe9f51945db4a91d7aac653edf53, type: 2}
+  mp: {fileID: 11400000, guid: 6d4732d2487320347b8373091f9f30c7, type: 2}
+  sp: {fileID: 11400000, guid: de339e312dd3f41488ebd657072c42a5, type: 2}
+  atk: {fileID: 11400000, guid: 2deaba573534f404da6b84b9700066c3, type: 2}
+  def: {fileID: 11400000, guid: 4231b30c774fd10419e99ff1bf895603, type: 2}
+  mAtk: {fileID: 11400000, guid: d20828ac70d8f7744960b65a42f3cda2, type: 2}
+  mDef: {fileID: 11400000, guid: 02b81fd61f9bcf54d8434c0ebed03afd, type: 2}
+  agi: {fileID: 11400000, guid: afd00c8bff48248489596c076f865c49, type: 2}
+  crit: {fileID: 11400000, guid: 1c62c5319eb36be4cbb073ce745cbddd, type: 2}
+  wis: {fileID: 11400000, guid: 5fdef9b38e0cdb04597d72f26a6bc37e, type: 2}
+  cha: {fileID: 11400000, guid: 7771ef0996e6368438e83d33188f22b6, type: 2}
+  kno: {fileID: 11400000, guid: 3d3c65f7b388bd74ebd34368478f39af, type: 2}

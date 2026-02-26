@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: ProjectRPG64.Database::ProjectRPG64.Database.CharacterClass
   className: Assassin
   classIcon: {fileID: 0}
-  ringIndex: 7
+  ringPosition: 7
   armorTypes: 030000000400000007000000
   weaponTypes: 000000000400000005000000

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3987247122284562117}
   - component: {fileID: 2119052371703121552}
   - component: {fileID: 4107250216691881467}
+  - component: {fileID: 6030111820572560166}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -202,6 +203,33 @@ MonoBehaviour:
     maxTurnAngle: 90
   airState:
     fallSpeed: -25
+--- !u!114 &6030111820572560166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34997005631781028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 740230f575e4e044da41f1b9a23d26a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ProjectRPG64.Data::ProjectRPG64.Data.PlayerIdentity
+  currentLevel: 1
+  classIndex: 0
+  nextExp: 0
+  maxHp: 0
+  maxMp: 0
+  maxSp: 0
+  atk: 0
+  def: 0
+  mAtk: 0
+  mDef: 0
+  agi: 0
+  crit: 0
+  wis: 0
+  cha: 0
+  kno: 0
 --- !u!1 &1548644399291126266
 GameObject:
   m_ObjectHideFlags: 0

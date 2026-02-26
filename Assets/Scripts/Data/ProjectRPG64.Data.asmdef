@@ -1,0 +1,16 @@
+{
+    "name": "ProjectRPG64.Data",
+    "rootNamespace": "ProjectRPG64.Data",
+    "references": [
+        "ProjectRPG64.Database"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: ProjectRPG64.Database::ProjectRPG64.Database.CharacterClass
   className: Ranger
   classIcon: {fileID: 0}
-  ringIndex: 9
+  ringPosition: 9
   armorTypes: 040000000500000007000000
   weaponTypes: 00000000040000000500000006000000
